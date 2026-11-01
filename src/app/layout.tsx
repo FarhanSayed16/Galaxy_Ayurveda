@@ -7,6 +7,7 @@ import { CategoryBar } from "@/components/layout/CategoryBar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/shared/WhatsAppFloat";
 import { BackToTop } from "@/components/shared/BackToTop";
+import { OrganizationJsonLd } from "@/components/shared/JsonLd";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -53,6 +54,9 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
+      <head>
+        <OrganizationJsonLd />
+      </head>
       <body className="min-h-full flex flex-col bg-[#FDF8F0] text-charcoal font-sans">
         <AnnouncementBar />
         <Navbar />

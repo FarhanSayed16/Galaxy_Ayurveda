@@ -4,6 +4,7 @@ import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { ProductDetailView } from "@/components/products/ProductDetailView";
+import { ProductJsonLd } from "@/components/shared/JsonLd";
 
 interface ProductPageProps {
   params: Promise<{
@@ -60,6 +61,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <div className="min-h-screen bg-[#FDF8F0] flex flex-col">
+      {/* Schema.org Product JSON-LD for rich Google snippets */}
+      <ProductJsonLd product={product} />
+
       {/* Breadcrumb Bar (Matching Screenshot 1 & 2) */}
       <div className="bg-[#FAF6F0] border-b border-[#e8dfcd]">
         <Breadcrumbs
@@ -82,4 +86,3 @@ export default async function ProductPage({ params }: ProductPageProps) {
     </div>
   );
 }
-
