@@ -69,3 +69,4 @@ export function TrustBadges() {
     </section>
   );
 }
+
