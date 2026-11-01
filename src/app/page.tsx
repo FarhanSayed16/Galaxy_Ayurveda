@@ -1,39 +1,34 @@
-import Link from "next/link";
-import { siteConfig } from "@/data/siteConfig";
+import { HeroSection } from "@/components/home/HeroSection";
+import { FeaturedProducts } from "@/components/home/FeaturedProducts";
+import { CategoryShowcase } from "@/components/home/CategoryShowcase";
+import { WhyChooseUs } from "@/components/home/WhyChooseUs";
+import { AboutSnippet } from "@/components/home/AboutSnippet";
+import { TrustBadges } from "@/components/home/TrustBadges";
+import { CTABanner } from "@/components/home/CTABanner";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-8 text-center bg-cream">
-      <div className="max-w-xl mx-auto space-y-4">
-        <span className="text-xs uppercase tracking-widest text-gold-dark font-semibold">
-          100% Pure Herbal & Unani Wellness
-        </span>
-        <h1 className="text-4xl md:text-5xl font-serif text-forest font-bold">
-          {siteConfig.name}
-        </h1>
-        <p className="text-charcoal-light text-base md:text-lg">
-          {siteConfig.tagline}
-        </p>
-        <p className="text-sm text-charcoal-muted">
-          Phase 0.1 Setup Complete. Bootstrapping layout and design system...
-        </p>
-        <div className="pt-4 flex justify-center gap-4">
-          <Link
-            href="/products"
-            className="px-6 py-2.5 bg-forest text-white rounded-md hover:bg-forest-dark transition-colors font-medium text-sm"
-          >
-            Explore Catalog
-          </Link>
-          <a
-            href={`https://wa.me/${siteConfig.contact.whatsapp}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-2.5 border border-forest text-forest rounded-md hover:bg-forest hover:text-white transition-colors font-medium text-sm"
-          >
-            WhatsApp Support
-          </a>
-        </div>
-      </div>
-    </main>
+    <div className="w-full flex flex-col">
+      {/* 1. Full-width Luxury Hero Slider */}
+      <HeroSection />
+
+      {/* 2. Featured Bestsellers (4-column grid with WhatsApp action) */}
+      <FeaturedProducts />
+
+      {/* 3. Shop by Classical Ayurvedic & Unani Category */}
+      <CategoryShowcase />
+
+      {/* 4. Why Choose Galaxy Ayurveda (4 Value Pillars) */}
+      <WhyChooseUs />
+
+      {/* 5. Brand Heritage & Dispensary Story Snippet */}
+      <AboutSnippet />
+
+      {/* 6. Regulatory Trust & License Badges */}
+      <TrustBadges />
+
+      {/* 7. Direct WhatsApp Consultation Banner */}
+      <CTABanner />
+    </div>
   );
 }
