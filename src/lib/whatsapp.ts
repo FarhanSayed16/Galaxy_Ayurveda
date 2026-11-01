@@ -70,3 +70,4 @@ export function generateWhatsAppEnquiryLink(): string {
 
   return `https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(message)}`;
 }
+

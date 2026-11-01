@@ -452,3 +452,4 @@ export const products: Product[] = [
     tags: ["cough syrup", "respiratory", "tulsi", "vasaka", "bronchial care"],
   },
 ];
+

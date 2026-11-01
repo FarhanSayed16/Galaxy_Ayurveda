@@ -109,3 +109,4 @@ export const siteConfig: SiteConfig = {
     ogImage: "/images/brand/og-image.jpg",
   },
 };
+

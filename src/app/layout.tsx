@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { siteConfig } from "@/data/siteConfig";
+import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
+import { Navbar } from "@/components/layout/Navbar";
+import { CategoryBar } from "@/components/layout/CategoryBar";
+import { Footer } from "@/components/layout/Footer";
+import { WhatsAppFloat } from "@/components/shared/WhatsAppFloat";
+import { BackToTop } from "@/components/shared/BackToTop";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -47,8 +53,14 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-cream text-charcoal">
-        {children}
+      <body className="min-h-full flex flex-col bg-[#FDF8F0] text-charcoal font-sans">
+        <AnnouncementBar />
+        <Navbar />
+        <CategoryBar />
+        <main className="flex-1 flex flex-col">{children}</main>
+        <Footer />
+        <WhatsAppFloat />
+        <BackToTop />
       </body>
     </html>
   );
