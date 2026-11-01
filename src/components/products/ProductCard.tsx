@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Star, Heart, MessageCircle, ArrowRight } from "lucide-react";
+import { Star, Heart, MessageCircle } from "lucide-react";
 import { Product } from "@/data/products";
 import { formatPrice, calculateDiscount } from "@/lib/utils";
 import { generateWhatsAppOrderLink } from "@/lib/whatsapp";
@@ -17,11 +17,11 @@ export function ProductCard({ product }: ProductCardProps) {
   const discount = calculateDiscount(product.price, product.mrp);
 
   return (
-    <div className="group relative flex flex-col bg-white border border-[#e8dfcd] rounded-lg overflow-hidden hover:border-forest/60 hover:shadow-md transition-all duration-300">
-      {/* Top Meta Header: Badge + Rating */}
-      <div className="p-3 pb-0 flex items-center justify-between text-[11px] font-sans">
+    <div className="group relative flex flex-col bg-white border border-[#e8dfcd] rounded-lg overflow-hidden hover:border-forest/60 hover:shadow-lg transition-all duration-300">
+      {/* Top Meta Header: Badge + Rating (Kama Ayurveda Style) */}
+      <div className="p-3.5 pb-0 flex items-center justify-between text-[11px] font-sans">
         {product.badge ? (
-          <span className="font-semibold uppercase tracking-widest text-[#8a3324] text-[10px]">
+          <span className="font-semibold uppercase tracking-widest text-[#94382b] text-[10px]">
             {product.badge}
           </span>
         ) : (
@@ -31,8 +31,8 @@ export function ProductCard({ product }: ProductCardProps) {
         )}
 
         <div className="flex items-center gap-1 text-charcoal">
-          <span className="font-semibold">{product.rating.toFixed(1)}</span>
-          <Star className="w-3.5 h-3.5 fill-[#C9A84C] text-[#C9A84C]" />
+          <span className="font-semibold text-xs">{product.rating.toFixed(1)}</span>
+          <Star className="w-3.5 h-3.5 fill-[#c5a059] text-[#c5a059]" />
           <span className="text-charcoal-muted text-[10px]">
             ({product.reviewCount})
           </span>
@@ -42,7 +42,7 @@ export function ProductCard({ product }: ProductCardProps) {
       {/* Product Image Area with Hover Zoom */}
       <Link
         href={`/products/${product.slug}`}
-        className="relative aspect-square w-full bg-[#FAF6F0]/40 overflow-hidden mt-1 p-4 flex items-center justify-center cursor-pointer"
+        className="relative aspect-square w-full bg-[#FAF7F2]/60 overflow-hidden mt-1 p-5 flex items-center justify-center cursor-pointer"
       >
         <div className="relative w-full h-full">
           <Image
@@ -54,8 +54,8 @@ export function ProductCard({ product }: ProductCardProps) {
           />
         </div>
 
-        {/* Weight / Pack badge overlay */}
-        <span className="absolute bottom-2 left-3 px-2 py-0.5 bg-white/90 backdrop-blur-xs text-[10px] font-medium text-charcoal-muted rounded border border-border/50">
+        {/* Weight badge pill */}
+        <span className="absolute bottom-2.5 left-3 px-2 py-0.5 bg-white/95 backdrop-blur-xs text-[10px] font-medium text-charcoal-muted rounded border border-border/70 shadow-2xs">
           {product.weight}
         </span>
       </Link>
@@ -64,18 +64,18 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="p-4 flex-1 flex flex-col justify-between">
         <div>
           <Link href={`/products/${product.slug}`} className="block group/title">
-            <h3 className="font-serif text-base sm:text-lg font-medium text-charcoal group-hover/title:text-forest line-clamp-1 transition-colors">
+            <h3 className="font-serif text-base sm:text-lg font-medium text-charcoal group-hover/title:text-forest line-clamp-1 transition-colors leading-snug">
               {product.name}
             </h3>
           </Link>
 
-          <p className="text-xs text-charcoal-light line-clamp-2 mt-1 leading-relaxed min-h-[32px]">
+          <p className="text-xs text-charcoal-light line-clamp-2 mt-1.5 leading-relaxed min-h-[34px]">
             {product.botanicalSubtitle}
           </p>
         </div>
 
         {/* Pricing & Wishlist Row */}
-        <div className="pt-3 mt-2 border-t border-border/40 flex items-center justify-between">
+        <div className="pt-3 mt-2 border-t border-border/50 flex items-center justify-between">
           <div className="flex items-baseline gap-2">
             <span className="font-sans text-base sm:text-lg font-bold text-forest">
               {formatPrice(product.price)}
@@ -86,7 +86,7 @@ export function ProductCard({ product }: ProductCardProps) {
                   {formatPrice(product.mrp)}
                 </span>
                 {discount > 0 && (
-                  <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.2 rounded">
+                  <span className="text-[10px] font-bold text-[#94382b] bg-[#faf0ee] px-1.5 py-0.2 rounded">
                     {discount}% OFF
                   </span>
                 )}
@@ -108,7 +108,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
       </div>
 
-      {/* Bottom CTA Action Button */}
+      {/* Bottom CTA Action Button (Refined Kama Ayurveda aesthetic) */}
       <div className="p-3 pt-0">
         <a
           href={generateWhatsAppOrderLink({
@@ -120,13 +120,12 @@ export function ProductCard({ product }: ProductCardProps) {
           })}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-[#FAF6F0] hover:bg-[#1B4332] text-forest hover:text-white border border-forest/40 hover:border-forest rounded font-medium text-xs tracking-wider uppercase transition-all duration-200 group/btn shadow-2xs"
+          className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-white hover:bg-forest text-forest hover:text-white border border-forest/50 hover:border-forest rounded font-semibold text-xs tracking-[0.12em] uppercase transition-all duration-200 group/btn shadow-2xs"
         >
-          <MessageCircle className="w-3.5 h-3.5 fill-[#25D366] text-[#25D366] group-hover/btn:fill-white group-hover/btn:text-white transition-colors" />
+          <MessageCircle className="w-3.5 h-3.5 text-forest group-hover/btn:text-gold fill-current transition-colors" />
           <span>Order on WhatsApp</span>
         </a>
       </div>
     </div>
   );
 }
-

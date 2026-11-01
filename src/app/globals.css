@@ -1,44 +1,51 @@
 @import "tailwindcss";
 
 @theme {
-  --color-forest: #1B4332;
-  --color-forest-dark: #0f271d;
-  --color-forest-light: #2d5a45;
-  --color-forest-muted: #e9f2ec;
+  --color-forest: #133826;
+  --color-forest-dark: #0c2418;
+  --color-forest-light: #23553b;
+  --color-forest-subtle: #eff5f1;
+  --color-forest-muted: #d9e6de;
   
-  --color-gold: #C9A84C;
-  --color-gold-dark: #a3832c;
-  --color-gold-light: #dfc87a;
-  --color-gold-subtle: #fcf8ee;
+  --color-gold: #c5a059;
+  --color-gold-dark: #977634;
+  --color-gold-light: #e4cfa0;
+  --color-gold-subtle: #fbf7ed;
   
-  --color-cream: #FDF8F0;
-  --color-cream-subtle: #faf4e8;
-  --color-cream-dark: #f0e6d2;
+  --color-terracotta: #94382b;
+  --color-terracotta-dark: #772b20;
+  --color-terracotta-light: #b44a3b;
+  --color-terracotta-subtle: #faf0ee;
 
-  --color-charcoal: #2D2D2D;
-  --color-charcoal-light: #555555;
-  --color-charcoal-muted: #777777;
+  --color-cream: #faf7f2;
+  --color-cream-subtle: #fdfbf8;
+  --color-cream-dark: #f0e9dc;
 
-  --color-mint: #E8F5E9;
-  --color-mint-dark: #c8e6c9;
+  --color-charcoal: #1c1917;
+  --color-charcoal-light: #44403c;
+  --color-charcoal-muted: #78716c;
+
+  --color-wa-emerald: #1e7e4e;
+  --color-wa-dark: #16623d;
+  --color-wa-subtle: #eaf6f0;
 
   --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 :root {
-  --background: #FDF8F0;
-  --foreground: #2D2D2D;
-  --primary: #1B4332;
-  --primary-foreground: #FFFFFF;
-  --accent: #C9A84C;
-  --accent-foreground: #1B4332;
-  --muted: #f4ede0;
-  --muted-foreground: #666666;
-  --card: #FFFFFF;
-  --card-foreground: #2D2D2D;
-  --border: #e8dfcd;
-  --ring: #1B4332;
+  --background: #faf7f2;
+  --foreground: #1c1917;
+  --primary: #133826;
+  --primary-foreground: #ffffff;
+  --accent: #c5a059;
+  --accent-foreground: #133826;
+  --muted: #f0e9dc;
+  --muted-foreground: #78716c;
+  --card: #ffffff;
+  --card-foreground: #1c1917;
+  --border: #e6dfd1;
+  --ring: #133826;
 }
 
 body {
@@ -50,24 +57,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom herbal scrollbar */
+/* Custom regal herbal scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #f4ede0;
+  background: #f2ebe0;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1B4332;
+  background: #133826;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0f271d;
+  background: #0c2418;
 }
 
-/* Clean selection color */
+/* Elegant selection color */
 ::selection {
-  background-color: #1B4332;
-  color: #FDF8F0;
+  background-color: #133826;
+  color: #faf7f2;
 }

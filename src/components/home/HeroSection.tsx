@@ -147,9 +147,9 @@ export function HeroSection() {
               href={slide.secondaryCtaLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-xs font-semibold text-xs tracking-widest uppercase rounded transition-all duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-gold/40 hover:border-gold backdrop-blur-xs font-semibold text-xs tracking-widest uppercase rounded transition-all duration-200"
             >
-              <MessageCircle className="w-4 h-4 text-[#25D366] fill-[#25D366]" />
+              <MessageCircle className="w-4 h-4 text-gold fill-current" />
               {slide.secondaryCtaText}
             </a>
           </div>

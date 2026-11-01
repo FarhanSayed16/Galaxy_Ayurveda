@@ -239,9 +239,9 @@ export function ProductDetailView({
                 href={whatsappOrderUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-[#25D366] hover:bg-[#20b858] text-white rounded font-sans font-semibold text-sm tracking-widest uppercase shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+                className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-[#133826] hover:bg-[#0c2418] text-[#FAF7F2] border border-gold/40 rounded font-sans font-semibold text-xs tracking-[0.16em] uppercase shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 group"
               >
-                <MessageCircle className="w-5 h-5 fill-white text-[#25D366]" />
+                <MessageCircle className="w-5 h-5 fill-current text-gold transition-transform group-hover:scale-110" />
                 <span>Order on WhatsApp (Instant Reply)</span>
               </a>
 
@@ -249,7 +249,7 @@ export function ProductDetailView({
                 href={whatsappConsultUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 py-3 px-6 bg-white hover:bg-forest text-forest hover:text-white border border-forest rounded font-sans font-medium text-xs tracking-wider uppercase transition-colors"
+                className="w-full flex items-center justify-center gap-2 py-3 px-6 bg-white hover:bg-[#133826] text-forest hover:text-white border border-forest/40 rounded font-sans font-medium text-xs tracking-wider uppercase transition-colors shadow-2xs"
               >
                 <span>Consult Herbalist Regarding This Herb</span>
               </a>

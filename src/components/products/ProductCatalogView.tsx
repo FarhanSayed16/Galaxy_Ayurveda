@@ -127,7 +127,7 @@ export function ProductCatalogView({
       </div>
 
       {/* Catalog Controls Bar (SORT BY & FILTER BY - Matching Screenshot 2) */}
-      <div className="bg-[#FAF6F0] border-b border-[#e8dfcd] py-3.5 sticky top-[69px] z-20 backdrop-blur-md">
+      <div className="bg-[#FAF7F2]/95 border-b border-[#e8dfcd] py-3.5 sticky top-[69px] z-20 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
           {/* Result Count and Active Badges */}
           <div className="flex items-center gap-3">
@@ -138,7 +138,7 @@ export function ProductCatalogView({
             {activeFiltersCount > 0 && (
               <button
                 onClick={clearAllFilters}
-                className="hidden sm:inline-flex items-center gap-1 text-xs text-[#8a3324] hover:underline font-semibold"
+                className="hidden sm:inline-flex items-center gap-1 text-xs text-[#94382b] hover:underline font-semibold"
               >
                 Clear all filters ({activeFiltersCount})
               </button>
@@ -148,14 +148,14 @@ export function ProductCatalogView({
           {/* Right Action Controls: SORT BY and FILTER BY */}
           <div className="flex items-center gap-3 sm:gap-6">
             {/* Sort Dropdown */}
-            <div className="flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-[#8a3324]">
+            <div className="flex items-center gap-1.5 text-xs font-semibold tracking-[0.14em] uppercase text-[#94382b]">
               <ArrowUpDown className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">SORT BY:</span>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as SortOption)}
                 aria-label="Sort formulations by"
-                className="bg-transparent text-xs font-semibold text-[#8a3324] uppercase border-none focus:outline-none cursor-pointer pr-2"
+                className="bg-transparent text-xs font-semibold text-[#94382b] uppercase border-none focus:outline-none cursor-pointer pr-2"
               >
                 <option value="featured">Featured / Bestseller</option>
                 <option value="price-asc">Price: Low to High</option>
@@ -168,12 +168,12 @@ export function ProductCatalogView({
             {/* Filter Toggle (for mobile drawer or toggle desktop sidebar) */}
             <button
               onClick={() => setIsMobileFilterOpen(true)}
-              className="lg:hidden flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-[#8a3324] py-1 px-2.5 rounded border border-[#8a3324]/30 hover:bg-[#8a3324]/5 transition-colors"
+              className="lg:hidden flex items-center gap-1.5 text-xs font-semibold tracking-[0.14em] uppercase text-[#94382b] py-1 px-2.5 rounded border border-[#94382b]/30 hover:bg-[#94382b]/5 transition-colors"
             >
               <Filter className="w-3.5 h-3.5" />
               <span>FILTER BY</span>
               {activeFiltersCount > 0 && (
-                <span className="w-4 h-4 rounded-full bg-[#8a3324] text-white text-[10px] flex items-center justify-center font-bold">
+                <span className="w-4 h-4 rounded-full bg-[#94382b] text-white text-[10px] flex items-center justify-center font-bold">
                   {activeFiltersCount}
                 </span>
               )}

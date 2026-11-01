@@ -126,9 +126,9 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#25D366] hover:bg-[#20b858] text-white font-semibold text-xs tracking-widest uppercase rounded shadow transition-all duration-200 mt-2"
+          className="w-full flex items-center justify-center gap-2.5 py-3.5 bg-[#133826] hover:bg-[#0c2418] text-white border border-gold/40 font-semibold text-xs tracking-[0.16em] uppercase rounded shadow hover:shadow-lg transition-all duration-200 mt-2 group"
         >
-          <MessageCircle className="w-4 h-4 fill-white text-[#25D366]" />
+          <MessageCircle className="w-4 h-4 text-gold fill-current transition-transform group-hover:scale-110" />
           <span>Send via WhatsApp Chat</span>
         </button>
       </form>
