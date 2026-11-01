@@ -497,94 +497,94 @@ export function generateWhatsAppEnquiryLink(): string {
 ## 🔧 Build Phases (Estimated Timeline)
 
 ### Phase 0.1 — Project Setup (Day 1, ~2 hours)
-- [ ] Initialize Next.js 15 project with TypeScript
-- [ ] Install and configure Tailwind CSS v4
-- [ ] Set up shadcn/ui with green/gold theme
-- [ ] Create `siteConfig.ts` with Galaxy Ayurveda details
-- [ ] Create product and category data files with sample data
-- [ ] Set up project folder structure
-- [ ] Configure `next.config.ts` (images, metadata)
+- [x] Initialize Next.js 15 project with TypeScript
+- [x] Install and configure Tailwind CSS v4
+- [x] Set up shadcn/ui with green/gold theme
+- [x] Create `siteConfig.ts` with Galaxy Ayurveda details
+- [x] Create product and category data files with sample data
+- [x] Set up project folder structure
+- [x] Configure `next.config.ts` (images, metadata)
 
 **Deliverable:** Project boots, `pnpm dev` shows a blank page.
 
 ---
 
 ### Phase 0.2 — Layout Shell (Day 1, ~3 hours)
-- [ ] `AnnouncementBar` — dismissible top bar
-- [ ] `Navbar` — logo (text for now), category links, search icon, WhatsApp icon
-- [ ] `MobileMenu` — hamburger → slide-out drawer with categories + links
-- [ ] `CategoryBar` — horizontal scrollable category links (like Kama Ayurveda)
-- [ ] `Footer` — brand info, quick links, contact, social icons, trust badges, copyright
-- [ ] `WhatsAppFloat` — fixed floating WhatsApp button (bottom-right)
-- [ ] Root `layout.tsx` — compose all layout components
-- [ ] Set up Google Fonts (Playfair Display + Inter)
+- [x] `AnnouncementBar` — dismissible top bar
+- [x] `Navbar` — logo (text for now), category links, search icon, WhatsApp icon
+- [x] `MobileMenu` — hamburger → slide-out drawer with categories + links
+- [x] `CategoryBar` — horizontal scrollable category links (like Kama Ayurveda)
+- [x] `Footer` — brand info, quick links, contact, social icons, trust badges, copyright
+- [x] `WhatsAppFloat` — fixed floating WhatsApp button (bottom-right)
+- [x] Root `layout.tsx` — compose all layout components
+- [x] Set up Google Fonts (Playfair Display + Inter)
 
 **Deliverable:** Every page has navbar, footer, floating WhatsApp. Looks professional.
 
 ---
 
 ### Phase 0.3 — Homepage (Day 2, ~4 hours)
-- [ ] `HeroSection` — full-width banner with overlay text, CTA button (static image initially, slider ready)
-- [ ] `FeaturedProducts` — grid of `isFeatured: true` products, 4-col grid
-- [ ] `CategoryShowcase` — category cards with images, linking to `/category/[slug]`
-- [ ] `WhyChooseUs` — 4 USP cards (100% Herbal, Lab Tested, Free Delivery, Unani Certified)
-- [ ] `TrustBadges` — license badges (FSSAI, AYUSH, Drug License, Est. Since)
-- [ ] `CTABanner` — "Have Questions?" WhatsApp CTA section
-- [ ] About snippet section with "Learn More" link
+- [x] `HeroSection` — full-width banner with overlay text, CTA button (static image initially, slider ready)
+- [x] `FeaturedProducts` — grid of `isFeatured: true` products, 4-col grid
+- [x] `CategoryShowcase` — category cards with images, linking to `/category/[slug]`
+- [x] `WhyChooseUs` — 4 USP cards (100% Herbal, Lab Tested, Free Delivery, Unani Certified)
+- [x] `TrustBadges` — license badges (FSSAI, AYUSH, Drug License, Est. Since)
+- [x] `CTABanner` — "Have Questions?" WhatsApp CTA section
+- [x] About snippet section with "Learn More" link
 
 **Deliverable:** Fully styled homepage with all sections. Looks like a real Ayurveda brand.
 
 ---
 
 ### Phase 0.4 — Product Pages (Day 2-3, ~4 hours)
-- [ ] `ProductCard` — image, name, short description, price, discount badge, WhatsApp CTA
-- [ ] `ProductGrid` — responsive grid layout (3-col desktop, 2-col mobile)
-- [ ] `CategoryFilter` — sidebar filter on desktop, drawer on mobile
-- [ ] `SearchBar` — client-side search across product names/tags
-- [ ] `Breadcrumbs` — navigation trail
-- [ ] Products listing page (`/products`) with sort + filter
-- [ ] Product detail page (`/products/[slug]`) with full layout
-- [ ] Category page (`/category/[slug]`) filtered listing
-- [ ] `WhatsAppOrderButton` — green CTA with pre-filled message
-- [ ] Related products section on detail page
+- [x] `ProductCard` — image, name, short description, price, discount badge, WhatsApp CTA
+- [x] `ProductGrid` — responsive grid layout (3-col desktop, 2-col mobile)
+- [x] `CategoryFilter` — sidebar filter on desktop, drawer on mobile
+- [x] `SearchBar` — client-side search across product names/tags
+- [x] `Breadcrumbs` — navigation trail
+- [x] Products listing page (`/products`) with sort + filter
+- [x] Product detail page (`/products/[slug]`) with full layout
+- [x] Category page (`/category/[slug]`) filtered listing
+- [x] `WhatsAppOrderButton` — green CTA with pre-filled message
+- [x] Related products section on detail page
 
 **Deliverable:** Customers can browse, search, filter, and click "Order on WhatsApp" on any product.
 
 ---
 
 ### Phase 0.5 — About & Contact Pages (Day 3, ~2 hours)
-- [ ] About page with brand story, philosophy, trust signals
-- [ ] Contact page with all contact methods + Google Maps
-- [ ] Custom 404 page
-- [ ] `BackToTop` scroll button
+- [x] About page with brand story, philosophy, trust signals
+- [x] Contact page with all contact methods + Google Maps
+- [x] Custom 404 page
+- [x] `BackToTop` scroll button
 
 **Deliverable:** All pages complete.
 
 ---
 
 ### Phase 0.6 — Polish & SEO (Day 3-4, ~3 hours)
-- [ ] Meta tags for all pages (title, description, OG image)
-- [ ] Structured data (JSON-LD) for products and organization
-- [ ] Favicon and site icons
-- [ ] Loading states / skeleton screens
-- [ ] Smooth scroll animations (fade-in on scroll)
-- [ ] Image optimization (WebP, lazy loading, proper sizes)
-- [ ] Accessibility check (alt text, keyboard navigation, contrast)
-- [ ] Performance audit (Lighthouse > 90)
-- [ ] Mobile testing across screen sizes
+- [x] Meta tags for all pages (title, description, OG image)
+- [x] Structured data (JSON-LD) for products and organization
+- [x] Favicon and site icons
+- [x] Loading states / skeleton screens
+- [x] Smooth scroll animations (fade-in on scroll)
+- [x] Image optimization (WebP, lazy loading, proper sizes)
+- [x] Accessibility check (alt text, keyboard navigation, contrast)
+- [x] Performance audit (Lighthouse > 90)
+- [x] Mobile testing across screen sizes
 
 **Deliverable:** SEO-ready, performant, accessible site.
 
 ---
 
 ### Phase 0.7 — Deploy & Go Live (Day 4, ~1 hour)
-- [ ] Push to GitHub repository
-- [ ] Connect to Vercel
-- [ ] Connect Galaxy Ayurveda domain to Vercel
-- [ ] Set up SSL (automatic via Vercel)
-- [ ] Verify all pages on production
-- [ ] Submit sitemap to Google Search Console
-- [ ] Test WhatsApp links on mobile
+- [x] Push to GitHub repository
+- [x] Connect to Vercel
+- [x] Connect Galaxy Ayurveda domain to Vercel
+- [x] Set up SSL (automatic via Vercel)
+- [x] Verify all pages on production
+- [x] Submit sitemap to Google Search Console
+- [x] Test WhatsApp links on mobile
 
 **Deliverable:** 🚀 **Galaxy Ayurveda is LIVE on the domain.**
 
