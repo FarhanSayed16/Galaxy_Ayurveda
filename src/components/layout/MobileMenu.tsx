@@ -226,3 +226,4 @@ export function MobileMenu({ isOpen, onClose, onOpenSearch }: MobileMenuProps) {
     </div>
   );
 }
+
