@@ -115,7 +115,7 @@ export const categories: Category[] = [
     description:
       "Pure Ghanvati and classical Rasayanas pressed without synthetic glues or binding chemicals, delivering rapid bioavailability.",
     image:
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
     subcategories: [
       { name: "Classical Guggulu Formulations", slug: "guggulu" },
       { name: "Pure Herb Ghanvati", slug: "ghanvati" },
